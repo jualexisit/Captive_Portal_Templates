@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 
+
+
 <head>
 
     <meta charset="UTF-8" />
@@ -16,6 +18,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/signin.css" rel="stylesheet">
+    <link href="css/newfont.css" rel="stylesheet">
 
     <!-- static zone info -->
     <script src="js/zone.js"></script>
@@ -160,14 +163,14 @@
     <header class="page-head">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
-                <div class="navbar-header">
+                
+                <div class="navbar-header" style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                    <img class="brand-logo" src="images/TN_shortTransparent.png" style="height:50px ; width:50px; margin-right:10px">
 
-                    <div style="color: #337ab7; text-align: center; font-size: 35px; ">
+                    <div style="color: #faaf18; text-align: center; font-size: 35px; ">
                         Welcome!
                     </div>
-                    <!--a class="navbar-brand" href="#">
-                        <img class="brand-logo" src="images/default-logo.png" height="50" width="150">
-                    </a>-->
+                    
                 </div>
             </div>
         </nav>
@@ -176,22 +179,13 @@
     <main class="page-content col-sm-6 col-sm-push-3">
         <!-- User option 1: login needed with name and password -->
 
-        <!--
-
-<div style="padding-left: 30%;">
-            <a style="nav-left: 1000px;" class="navbar-brand" href="#">
-                <img class="brand-logo" src="images/Logo2.jpg" height="100%" width="150">
-            </a>
-        </div>
-        -->
-
-        <img class="brand-logo" src="images/Conference.png" height="40%" width="40%"
-            style="border: 5px solid #555; border-radius: 20px; margin-left: 30%; ">
+        <img class="brand-logo" src="images/Conference.jpg" height="40%" width="40%"
+            style="border: 3px solid #000000; border-radius: 15px; margin-left: 30%; ">
 
         <div id="login_password" class="hidden">
 
             <form class="form-signin">
-                <h2 class="form-signin-heading" style="color: #337ab7; text-align: center;">Free Wi-Fi</h2>
+                <h2 class="form-signin-heading" style="color: #525252; text-align: center;">Free Wi-Fi</h2>
 
 
                 <label for="inputUsername" class="sr-only">Username</label>
@@ -200,22 +194,23 @@
                 <label for="inputPassword" class="sr-only">Password</label>
                 <input type="password" autocomplete="new-password" id="inputPassword" class="form-control"
                     placeholder="Password" required>
-                <button class="btn btn-primary btn-block" id="signin" type="button">Accept & Connect</button>
+                <button class="btn btn-primary btn-block" id="signin_anon" type="button" style="background-color: #faaf18; color: #525252;">Accept & Connect</button>
 
 
-                <h4 style="text-align: center;"><a href="https://townandcountrybrentwood.com/" target="_blank">Help</a>
+                <h4 style="text-align: center;">
+                    <a href="https://support.tradewindsnetworks.com/portal/en/home" target="_blank" style="color: #faaf18;">Help</a>
                 </h4>
 
 
-                <h2 class="form-signin-heading" style="color: #337ab7; text-align: center; font-size: 12px;">
+                <h2 class="form-signin-heading" style="color: #525252; text-align: center; font-size: 12px;">
                     I agree to the
                     <a href="word_files/Guest WiFi Wireless Networking Acceptable Use Policy 1-8-2023.pdf"
-                        target="_blank">
+                        target="_blank" style="color: #faaf18;">
                         Terms of Service
                     </a>
                     and have reviewed the
                     <a href="word_files/Guest WiFi Wireless Networking Acceptable Use Policy 1-8-2023.pdf"
-                        target="_blank">
+                        target="_blank" style="color: #faaf18;">
                         Privacy Policy
                     </a>
                 </h2>
@@ -227,24 +222,25 @@
         <div id="login_none" class="hidden">
             <form class="form-signin">
 
-                <h2 style="color: #337ab7; text-align: center;">Free-Wifi</h2>
+                <h2 style="color: #525252; text-align: center;">Free Wi-Fi</h2>
 
-                <button class="btn btn-primary btn-block" id="signin_anon" type="button">Accept & Connect</button>
+                <button class="btn btn-primary btn-block" id="signin_anon" type="button" style="background-color: #faaf18; color: #525252;">Accept & Connect</button>
 
 
-                <h4 style="text-align: center;"><a href="https://townandcountrybrentwood.com/" target="_blank">Help</a>
+                <h4 style="text-align: center;">
+                    <a href="https://support.tradewindsnetworks.com/portal/en/home";class="newfont" target="_blank" style="color: #faaf18;">Help</a>
                 </h4>
 
 
-                <h2 class="form-signin-heading" style="color: #337ab7; text-align: center; font-size: 12px;">
+                <h2 class="form-signin-heading" style="color: #525252; text-align: center; font-size: 12px;">
                     I agree to the
                     <a href="word_files/Guest WiFi Wireless Networking Acceptable Use Policy 1-8-2023.pdf"
-                        target="_blank">
+                        target="_blank" style="color: #faaf18;">
                         Terms of Service
                     </a>
                     and have reviewed the
                     <a href="word_files/Guest WiFi Wireless Networking Acceptable Use Policy 1-8-2023.pdf"
-                        target="_blank">
+                        target="_blank" style="color: #faaf18;">
                         Privacy Policy
                     </a>
                 </h2>
@@ -257,19 +253,19 @@
                 <button class="btn btn-primary btn-block" id="logoff" type="button">Logout</button>
 
 
-                <h4 style="text-align: center;"><a href="https://townandcountrybrentwood.com/" target="_blank">Help</a>
+                <h4 style="text-align: center;"><a href="https://support.tradewindsnetworks.com/portal/en/home" target="_blank" style="color: #faaf18;">Help</a>
                 </h4>
 
 
-                <h2 class="form-signin-heading" style="color: #337ab7; text-align: center; font-size: 12px;">
+                <h2 class="form-signin-heading" style="color: #525252; text-align: center; font-size: 12px;">
                     I agree to the
                     <a href="word_files/Guest WiFi Wireless Networking Acceptable Use Policy 1-8-2023.pdf"
-                        target="_blank">
+                        target="_blank" style="color: #faaf18;">
                         Terms of Service
                     </a>
                     and have reviewed the
                     <a href="word_files/Guest WiFi Wireless Networking Acceptable Use Policy 1-8-2023.pdf"
-                        target="_blank">
+                        target="_blank" style="color: #faaf18;">
                         Privacy Policy
                     </a>
                 </h2>
